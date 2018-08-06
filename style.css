@@ -47,7 +47,7 @@ font-family: 'Bitter', serif !important;
 
 @media screen and (min-width: 992px) {
 .jumbotron {
-    background: url(http://www.vivodibenessere.it/wp-content/uploads/2014/02/coffee.jpg) no-repeat;
+    background: url(img/coffee-dl.jpg) no-repeat;
     background-size: cover;
     width: auto;
     height: 600px;
@@ -141,12 +141,20 @@ footer {
 
 /*Buttons for fb adn yelp*/
 
+.a {
+   text-decoration: none; 
+}
+
 .info-buttons {
     float: right;
     clear: left;
     font-size: 75px;
     display: inline-block;
-   
+}
+
+.yelp:hover {
+    opacity: .50;
+    color: white;
 }
 
 .fb {
@@ -186,6 +194,8 @@ clear: right;
         font-size: 35px;
         display: inline-block;
         float: left;
+        color: red;
+
     }
     
     .fb {
@@ -202,10 +212,12 @@ clear: right;
 /*Button and text info display on phone*/
 
 @media screen and (max-width:480px) {
+   
     .yelp {
         font-size: 35px;
         display: inline-block;
         float: left;
+        color: red;
     }
     
     .fb {
