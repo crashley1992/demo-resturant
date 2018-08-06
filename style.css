@@ -1,0 +1,304 @@
+body {
+background-color: #852E29 !important; 
+font-family: 'Bitter', serif !important;
+
+}
+
+/*nav bar size for larger screens*/
+
+.navbar-right {
+    font-size: 1.5em;
+}
+
+/*For cellphone makes the larger nav bar disappear*/
+
+@media screen and (min-width: 200px) and (max-width: 1001px) {
+    .navbar-right { 
+     display: none;
+    }
+}
+
+.navbar-brand {
+  padding-top: 15px;
+  font-size: 50px !important;  
+}
+
+/*makes the resturant title smaller for smaller screens*/
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+    .navbar-brand {
+    font-size: 1.5em !important;
+    }
+}
+
+/*setting to have the mobile menu only show on smaller screens*/
+@media screen and (min-width: 200px) and (max-width: 991px) {
+    .navbar-toggle {
+        float: right;
+    }
+ }
+
+.nav-logo {
+    width: 100px;
+    height: 80px;
+    padding-right: 10px;
+}
+
+/*design for desktop/larger screens*/
+
+@media screen and (min-width: 992px) {
+.jumbotron {
+    background: url(img/coffee-dl.jpg) no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 600px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: brightness(120%);
+    }
+}
+
+/*jumbotron adapted for tablets*/
+
+@media screen and (min-width: 482px) and (max-width: 991px) {
+    .jumbotron {
+    background: url(img/coffee-dl.jpg) no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: brightness(120%);
+    }
+}
+    
+
+@media screen and (max-width:480px) {
+    
+     .jumbotron {
+    background: url(img/coffee-dl.jpg) no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: brightness(120%);
+    }
+}
+
+footer {
+    border: #151515 solid 5px;
+    background: #151515;
+}
+
+
+/*Google Map */
+
+.mapouter {
+    text-align:right;
+    height:300px;
+    width:400px;
+    display: inline-block;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+   height:300px;
+    width:400px;
+    display: inline-block;
+}
+
+/*tablet google map sizing*/
+@media screen and (min-width: 482px) and (max-width: 991px) {
+ .mapouter {
+    height:200px;
+    width:300px; 
+    }
+    
+    .gmap_canvas {
+    height:200px;
+    width:300px;
+    }
+}
+
+
+/*Mobile phone google map sizing*/
+@media screen and (max-width:480px) {
+    
+    .mapouter {
+    height:150px;
+    width:200px; 
+    }
+    
+    .gmap_canvas {
+    height:150px;
+    width:200px; 
+    }
+}
+
+/*Buttons for fb adn yelp*/
+
+.info-buttons {
+    float: right;
+    clear: left;
+    font-size: 75px;
+    display: inline-block;
+   
+}
+
+.fb {
+font-size: 50px;
+vertical-align: top;
+float: right;
+padding: 15px 15px 15px 15px;
+margin-right: 100px;
+color: #3b5998;
+display: inline-block;
+}
+
+/* Yelp Button*/
+.yelp {
+color: red;
+font-size: 50px;
+vertical-align: top;
+float: right;
+padding: 15px 15px 15px 15px;
+display: inline-block;
+}
+
+/*Text in the footer talking about free parking desktop screen*/
+
+.info-text {
+text-align: left;
+color: white;
+display: inline-block;
+margin-right: 100px;
+float: left;
+clear: right;
+}
+
+
+@media screen and (min-width: 482px) and (max-width: 991px) {
+     .yelp {
+        font-size: 35px;
+        display: inline-block;
+        float: left;
+    }
+    
+    .fb {
+        font-size: 35px;
+        text-align: left;
+        float: left;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+}
+
+
+/*Button and text info display on phone*/
+
+@media screen and (max-width:480px) {
+    .yelp {
+        font-size: 35px;
+        display: inline-block;
+        float: left;
+    }
+    
+    .fb {
+        font-size: 35px;
+        text-align: left;
+        float: left;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+    .info-text {
+    display: none;
+    }
+    
+}
+
+/* Catering form page. Settings for the form*/
+
+.form-group {
+    margin-top: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+.btn-primary {
+    margin-top: 25px;
+}
+
+.catering-form {
+    color: white;
+    margin-bottom: 25px; 
+    font-size: 25px;
+}
+
+.form-inline {
+    margin: 25px 25px 25px 25px;
+    color: white;
+    font-size: 20px;
+}
+
+#inlineFormInput {
+margin-right: 15px;
+}
+
+.form-check-label {
+    margin-top: 15px;
+}
+
+@media screen and (max-width:480px) {
+.catering-form {
+    color: white;
+    margin-bottom: 25px; 
+    font-size: 15px;
+} 
+}
+
+/* Food menu page*/
+
+.menu {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    border: black solid 5px;
+    background: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu-title {
+    font-weight:  bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.menu-type {
+    text-decoration: underline;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.menu-type2 {
+    
+    text-decoration: underline;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.menu-description {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
